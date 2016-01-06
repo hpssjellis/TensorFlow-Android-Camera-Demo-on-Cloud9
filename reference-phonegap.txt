@@ -19,7 +19,7 @@ export PATH
 
 
 
-
+ ls /usr/lib/jvm
 
 
 
