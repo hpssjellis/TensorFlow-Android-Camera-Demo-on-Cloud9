@@ -11,7 +11,7 @@ echo "--------------------------------------------------------------"
 echo ". "
 
 
-echo "Now checking is pip is installed"
+echo "Now checking if pip is installed"
 
 pip list
 
@@ -28,22 +28,64 @@ echo "Some other useful commands are cd     cd ..      dir    ls     pwd     "
 echo "."
 
 
+echo "--------------------------------------------------------------"
+echo "Install TensorFlow  "
+echo "."
+
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
 
-echo "Installing PIP and Virtual Environment"
+echo "TensorFlow installed"
 
-sudo apt-get install python-pip python-dev python-virtualenv
+
+
+echo "Install gcc g++ build-essential"
+
+sudo apt-get install gcc g++ build-essential
 
 echo "--------------------------------------------------------------"
 echo ". "
 
-echo "make the tensorflow environment"
+echo "Installing Java"
 
-virtualenv --system-site-packages ~/virtual-tf
+sudo add-apt-repository ppa:webupd8team/java
+
+#sudo apt-get update
+
+sudo apt-get install oracle-java8-installer
 
 echo "--------------------------------------------------------------"
 echo ". "
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# delte the re
 
 echo "Activate the environemtn use deactivate to get your cursor back"
 source ~/virtual-tf/bin/activate 
