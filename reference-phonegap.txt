@@ -1,6 +1,6 @@
 On Linux does this work?
 
-
+nano ~/.profile
 
 
 
@@ -11,7 +11,63 @@ ANDROID_SDK_HOME=/home/your_username
 export JAVA_HOME=/usr/java/jdk1.7.0_21
 export PATH=/usr/java/jdk1.7.0_21/bin:$PATH
 
+ source /root/.bash_profile
 
+java --version
+
+echo $JAVA_HOME
+
+echo $PATH
+
+
+
+
+
+
+
+A script
+
+[root@localhost ~]# cat /root/.bash_profile
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+export JAVA_HOME=/usr/java/jdk1.7.0_21
+export PATH=/usr/java/jdk1.7.0_21/bin:$PATH
+[root@localhost ~]#
+
+
+
+
+
+
+
+
+(1) /etc/profile = To set environment variable to all users
+
+(2) $HOME/.bashrc = To set environment for login user.
+(3) $HOME/.bash_profile = To set environment for login user
+
+Note: .bash_profile is executed for login shells, while .bashrc is executed for interactive non-login shells.
+
+(4) Create a shell script inside /etc/profile.d/ with .sh extension. and make the file executable.
+
+(5) Create a shell script in some other location and give its path in /etc/rc.local
+
+
+
+
+
+export PATH=$JAVA_HOME/bin:$PATH
 
 
 
