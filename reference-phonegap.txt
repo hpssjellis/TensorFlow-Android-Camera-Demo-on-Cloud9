@@ -11,6 +11,19 @@ export PATH
 
 
 
+
+
+
+
+to find jdk type
+
+dpkg --list | grep -i jdk
+
+
+
+
+
+
 find /usr/lib/jvm/java-1.x.x-openjdk
 vim /etc/profile
 add:
