@@ -1,0 +1,36 @@
+java install
+
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+
+java -version
+
+sudo update-alternatives --config java
+
+sudo apt-get install oracle-java8-set-default
+
+
+sudo apt-get install openjdk-8-jdk
+
+
+java -version
+
+
+sudo apt-get install openjdk-7-jdk
+
+already installed
+
+
+
+wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u20-b26/jdk-8u20-linux-x64.tar.gz
+
+
+
+git clone https://github.com/bazelbuild/bazel.git
+
+run compile.sh
+
+ wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.rpm
