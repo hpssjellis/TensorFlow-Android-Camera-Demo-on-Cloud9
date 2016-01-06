@@ -9,6 +9,14 @@ export PATH
 
 
 
+simple could9 setup
+
+
+JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+export JAVA_HOME
+PATH=$JAVA_HOME/bin:"${PATH}"
+export PATH
+
 
 
 
