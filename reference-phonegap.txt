@@ -1,3 +1,24 @@
+On Linux does this work?
+
+
+
+
+
+set ANDROID_SDK_HOME=C:\[wherever your sdk folder is]
+ANDROID_SDK_HOME=/home/your_username
+
+
+export JAVA_HOME=/usr/java/jdk1.7.0_21
+export PATH=/usr/java/jdk1.7.0_21/bin:$PATH
+
+
+
+
+
+
+This works on windows
+
+
 Net use p: "\\abcd\My Classes$\computer programming 2011\Assignments" /persistent:no
 
 
