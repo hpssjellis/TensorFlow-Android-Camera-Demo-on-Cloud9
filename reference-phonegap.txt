@@ -2,6 +2,12 @@ On Linux does this work?
 
 nano ~/.profile   (this works)
 
+JAVA_HOME=/opt/java/jdk1.6.0_12;
+export JAVA_HOME
+PATH=$JAVA_HOME/bin:"${PATH}"
+export PATH
+
+
 
 
 
@@ -41,6 +47,39 @@ $JAVA_HOME/bin/java -version says 'Permission Denied'
 sudo $JAVA_HOME/bin/java -version (asks for password, then) says Command not found
 
 but cd $JAVA_HOME/bin, and ls shows that it is right directory.
+
+
+
+
+
+The last lines in my bash.bashrc
+
+export JAVA_HOME="/usr/lib/jvm/java-6-openjdk/"
+export CATALINA_HOME="/home/soheil/Programs/apache-tomcat-6.0.14/"
+export JDK_HOME="/usr/lib/jvm/java-6-openjdk/"
+I've also set the PATH variable for IDEA's /bin:
+
+Lines in /etc/environmet
+
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/soheil/Programs/idea-7590/bin"
+LANG="en_US.UTF-8"
+LANGUAGE="en_US:en"
+And run this command:
+
+source /etc/environment
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
