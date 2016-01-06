@@ -1,0 +1,18 @@
+Net use p: "\\abcd\My Classes$\computer programming 2011\Assignments" /persistent:no
+
+
+set ANT_HOME=p:phonegapmain\ant
+set ANDROID_HOME=p:phonegapmain\android
+set ANDROID_SDK_HOME=%USERPROFILE%
+set JAVA_HOME=p:phonegapmain\java
+
+set PATH=C:\Windows;C:\Windows\System32;p:phonegapmain\java\bin;p:phonegapmain\android\tools;p:phonegapmain\android\platform-tools;p:phonegapmain\ant\bin
+
+
+set CLASSPATH=
+
+
+
+
+p:phonegapmain\phonegap\lib\android\bin\create.bat H:\Documents\phonegap1 com.myone.myApp1 myApp1
+pause
