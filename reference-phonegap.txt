@@ -19,7 +19,7 @@ to find jdk type
 
 dpkg --list | grep -i jdk
 
-
+readlink -f $(which java)
 
 
 
