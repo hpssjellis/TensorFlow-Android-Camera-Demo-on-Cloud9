@@ -1,6 +1,63 @@
 On Linux does this work?
 
-nano ~/.profile
+nano ~/.profile   (this works)
+
+
+
+
+find /usr/lib/jvm/java-1.x.x-openjdk
+vim /etc/profile
+add:
+
+export JAVA_HOME="path that you found"
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+
+
+export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+
+
+ Doing what Oracle does (as a former Sun Employee I can't get used to that one)
+
+ln -s latestJavaRelease /usr/java/default
+Where latestJavaRelease is the version that you want to use
+
+then export JAVA_HOME=/usr/java/default
+
+
+
+#!/bin/sh
+export JAVA_HOME=/opt/ibm/java-x86_64-60/
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+
+which java says /usr/bin/java
+
+$JAVA_HOME/bin/java -version says 'Permission Denied'
+
+sudo $JAVA_HOME/bin/java -version (asks for password, then) says Command not found
+
+but cd $JAVA_HOME/bin, and ls shows that it is right directory.
+
+
+
+Alternatively, type the following command to activate the new path settings immediately:
+$ source ~/.bash_profile
+
+OR
+$ . ~/.bash_profile
+
+Verify new settings:
+$ echo $JAVA_HOME
+$ echo $PATH
+
+
+which java
+
+find / -name java
 
 
 
