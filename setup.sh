@@ -22,6 +22,8 @@ echo ". "
 echo "Now checking if java is installed"
 
 java -version
+echo ""
+javac -version
 
 echo "--------------------------------------------------------------"
 echo ". "
@@ -33,6 +35,8 @@ echo ". "
 echo "Now checking where the jdk is installed"
 
 readlink -f $(which java)
+echo ""
+readlink -f $(which javac)
 
 echo "--------------------------------------------------------------"
 echo ". "
@@ -79,8 +83,13 @@ sudo apt-get install openjdk-8-jdk
 echo "Again checking if a jdk is installed"
 
 java -version
+echo ""
+javac -version
+echo ""
 
 readlink -f $(which java)
+echo ""
+readlink -f $(which javac)
 
 echo "--------------------------------------------------------------"
 echo ". "
