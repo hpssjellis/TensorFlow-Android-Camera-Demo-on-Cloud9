@@ -35,6 +35,21 @@ export PATH
 
 
 
+
+
+
+
+
+Install JDK -- sudo apt-get install openjdk-7-jdk
+Environment Variable -- sudo nano /etc/environment adding the following line:
+JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-i386
+
+
+
+
+
+
+
  ls /usr/lib/jvm
 
 
