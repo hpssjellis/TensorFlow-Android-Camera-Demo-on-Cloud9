@@ -145,15 +145,21 @@ wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.z
 unzip /tmp/inception5h.zip -d /home/ubuntu/workspace/tensorflow/tensorflow/examples/android/assets/
 
 
-#tar -xvzf /path/to/yourfile.tgz
-#http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
-
-
 echo "-------------DONE-------------------------------------------------"
 echo ". "
 
 
 echo "Now get the Android SDK"
+
+
+
+#tar -xvzf /path/to/yourfile.tgz
+#http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+#"android list sdk" will connect to the remote repository and list all the packages available with an index number.
+#"android update sdk --no-ui" accepts a "--filter" argument that can take a package index, or a category name.
+
+
+
 
 wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /tmp/android-sdk_r24.4.1-linux.tgz
 
