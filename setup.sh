@@ -168,6 +168,9 @@ export PATH=${PATH}:/home/ubuntu/workspace/android-sdk-linux/platform-tools
 export ANDROID_SDK_HOME ={PATH}:/home/ubuntu/workspace/android-sdk-linux
 
 
+cd /android-sdk-linux/tools/
+android update sdk --no-ui
+cd ..
 
 
 echo "-------------DONE-------------------------------------------------"
