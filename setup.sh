@@ -26,16 +26,11 @@ java -version
 echo "--------------------------------------------------------------"
 echo ". "
 
-echo "Now checking if java is installed"
-
-java -version
-
-echo "--------------------------------------------------------------"
-echo ". "
 
 
 
-echo "Now checking if a jdk is installed"
+
+echo "Now checking where the jdk is installed"
 
 readlink -f $(which java)
 
@@ -46,6 +41,7 @@ echo ". "
 
 echo "next list this directory"
 pwd
+echo ""
 ls -lah  
 
 echo "--------------------------------------------------------------"
