@@ -4,6 +4,13 @@
 #  bash setup.sh
 
 
+# try this bazel installer
+#https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh
+
+
+
+
+
 echo "First checking the Python version"
 python --version
 
