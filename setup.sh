@@ -126,12 +126,22 @@ read -p "Press [Enter] key to start backup..."
 
 
 
-git clone https://github.com/bazelbuild/bazel.git
+#git clone https://github.com/bazelbuild/bazel.git
 
+
+#cd bazel
+#bash compile.sh
+
+#cd ..
+
+
+
+
+https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh
+wget https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh -O /home/ubuntu/workspace/bazel
 
 cd bazel
-bash compile.sh
-
+bash bazel-0.1.2-jdk7-installer-linux-x86_64.sh
 cd ..
 
 
