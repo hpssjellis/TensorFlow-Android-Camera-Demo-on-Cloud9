@@ -127,9 +127,9 @@ git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 echo "Now download the image sets"
 
 
-$ wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip -O /tmp/inception5h.zip
+wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip -O /tmp/inception5h.zip
 
-$ unzip /tmp/inception5h.zip -d /home/ubuntu/workspace/bazel/examples/android/assets/
+unzip /tmp/inception5h.zip -d /home/ubuntu/workspace/bazel/examples/android/assets/
 
 
 
