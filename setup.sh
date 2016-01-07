@@ -110,9 +110,28 @@ git clone https://github.com/bazelbuild/bazel.git
 
 
 cd bazel
-run compile.sh
+bash compile.sh
 
 cd ..
+
+
+echo "----------------Bazel Done----------------------------------------------"
+echo ". "
+
+echo "Now get TensorFlow"
+
+
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+
+
+echo "Now download the image sets"
+
+
+$ wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip -O /tmp/inception5h.zip
+
+$ unzip /tmp/inception5h.zip -d /home/ubuntu/workspace/bazel/examples/android/assets/
+
+
 
 
 
@@ -134,61 +153,6 @@ echo ". "
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-echo "Activate the environment use deactivate to get your cursor back"
-source ~/virtual-tf/bin/activate 
-
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-echo "Now intall tensorFlow into the enviroment"
-
-#pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-echo "Unfortunately on cloud 9 Pip hides the TensorFlow folder so lets clone it for our use"
-echo "Kind of wasteful but it isn't on our computer anyway"
-
-#deactivate
-
-#git clone --recurse-submodules https://github.com/tensorflow/tensorflow
-
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-
-
-
-echo "--------------------------------------------------------------"
-echo ". "
-
-echo "--------------------------------------------------------------"
-echo "You can close this window by clicking the close x"
-echo "Right click rocksetta files and select run "
-echo "you can also run them manually by entering the virtual environment"
-echo "source ~/virtual-tf/bin/activate "
-echo "Then bash rocksetta????.sh"
-echo "deactivate    to get out of the virtual enviroment"
-echo "-----------------------------------------"
 echo ""
 echo "If you have made it this far the installation has finished"
 echo "SETUP.SH HAS FINISHED INSTALLING. You can close this terminal window by clicking the x"
