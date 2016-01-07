@@ -97,6 +97,19 @@ echo ". "
 
 
 
+
+JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/bin/java
+export JAVA_HOME
+PATH=$JAVA_HOME/bin:"${PATH}"
+export PATH
+
+
+
+
+
+
+
+
 echo "Now trying Bazel"
 read -p "Press [Enter] key to start backup..."
 
