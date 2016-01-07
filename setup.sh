@@ -177,9 +177,25 @@ export ANDROID_SDK_HOME ={PATH}:/home/ubuntu/workspace/android-sdk-linux
 cd /android-sdk-linux/tools/
 android update sdk --no-ui
 cd ..
+# note: for size sake had to delete several android platforms 10-20 ???
+
+echo "-------------Android SDK DONE-------------------------------------------------"
+echo ". "
+
+echo "Now lets try the Android NDK"
 
 
-echo "-------------DONE-------------------------------------------------"
+
+wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home/ubuntu/workspace/android-ndk-r10e-linux-x86_64.bin
+
+chmod a+x android-ndk-r10e-linux-x86_64.bin
+./android-ndk-r10e-linux-x86_64.bin
+
+
+
+
+
+echo "-------------Android NDK DONE-------------------------------------------------"
 echo ". "
 
 
