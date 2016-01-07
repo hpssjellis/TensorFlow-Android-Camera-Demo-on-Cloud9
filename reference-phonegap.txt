@@ -1,5 +1,21 @@
 On Linux does this work?
 
+
+
+# Android
+export ANDROID_NDK_ROOT=/opt/android-ndk-r9
+export ANDROID_SDK_ROOT=/opt/android-sdk
+export JAVA_HOME=`/usr/libexec/java_home`
+export ANDROID_HOME=~/.android
+
+export PATH="$ANDROID_SDK_ROOT/tools/":"$ANDROID_SDK_ROOT/platform-tools/":"$PATH"
+
+
+
+
+
+
+
 nano ~/.profile   (this works)
 
 JAVA_HOME=/opt/java/jdk1.6.0_12;
