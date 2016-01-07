@@ -145,14 +145,23 @@ wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.z
 unzip /tmp/inception5h.zip -d /home/ubuntu/workspace/tensorflow/tensorflow/examples/android/assets/
 
 
-
-
+#tar -xvzf /path/to/yourfile.tgz
+#http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
 
 
 echo "-------------DONE-------------------------------------------------"
 echo ". "
 
 
+echo "Now get the Android SDK"
+
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /tmp/android-sdk_r24.4.1-linux.tgz
+
+tar -xvzf /tmp/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
+
+
+echo "-------------DONE-------------------------------------------------"
+echo ". "
 
 
 
