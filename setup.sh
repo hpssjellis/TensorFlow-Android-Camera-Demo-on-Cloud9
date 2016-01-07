@@ -160,6 +160,16 @@ wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /tmp/android-
 tar -xvzf /tmp/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
 
 
+
+
+
+export PATH=${PATH}:/home/ubuntu/workspace/android-sdk-linux/tools
+export PATH=${PATH}:/home/ubuntu/workspace/android-sdk-linux/platform-tools
+export ANDROID_SDK_HOME ={PATH}:/home/ubuntu/workspace/android-sdk-linux
+
+
+
+
 echo "-------------DONE-------------------------------------------------"
 echo ". "
 
