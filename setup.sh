@@ -157,15 +157,6 @@ echo ". "
 
 
 
-
-
-
-
-
-
-
-
-
 echo ""
 echo "If you have made it this far the installation has finished"
 echo "SETUP.SH HAS FINISHED INSTALLING. You can close this terminal window by clicking the x"
