@@ -169,9 +169,11 @@ tar -xvzf /tmp/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
 
 
 
-export PATH=${PATH}:/home/ubuntu/workspace/android-sdk-linux/tools
-export PATH=${PATH}:/home/ubuntu/workspace/android-sdk-linux/platform-tools
-export ANDROID_SDK_HOME ={PATH}:/home/ubuntu/workspace/android-sdk-linux
+
+
+export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
+export PATH=${PATH}:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/platform-tools
+
 
 
 cd /android-sdk-linux/tools/
@@ -191,12 +193,17 @@ wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home
 chmod a+x android-ndk-r10e-linux-x86_64.bin
 ./android-ndk-r10e-linux-x86_64.bin
 
+export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
+
+export PATH=${PATH}:ANDROID_NDK_HOME
 
 
 
 
 echo "-------------Android NDK DONE-------------------------------------------------"
-echo ". "
+echo "Note: The Bazel main directory WORKSPACE file needs Android stuff uncommented with these directories added "
+echo "/home/ubuntu/workspace/android-ndk-r10e for the NDK"
+echo "/home/ubuntu/workspace/android-sdk-linux for the SDK"
 
 
 
