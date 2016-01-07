@@ -46,6 +46,13 @@ JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-i386
 
 
 
+cat /android/sdk/platform-tools/source.properties | grep Pkg.Revision
+cat /android/sdk/tools/source.properties | grep Pkg.Revision
+
+
+
+
+
 
 
 
