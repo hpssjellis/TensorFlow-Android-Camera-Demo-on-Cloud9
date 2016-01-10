@@ -22,5 +22,10 @@ sudo docker pull jturolla/docker-android-build
 lsb_release -a
 
 
+big file to try
+
+sudo docker pull jupyter/demo
+sudo docker run -p 8888:8888 jupyter/demo
+
 
 
