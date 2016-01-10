@@ -1,0 +1,26 @@
+
+
+
+
+sudo docker ps -a
+
+sudo docker start "process name"
+
+sudo docker attach "process name"
+
+right click open terminal
+docker daemon
+
+curl -sSL https://get.docker.com/ | sh
+
+
+sudo docker run hello-world
+
+sudo docker pull jturolla/docker-android-build
+
+
+lsb_release -a
+
+
+
+
