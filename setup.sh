@@ -217,6 +217,13 @@ export PATH=${PATH}:ANDROID_NDK_HOME
 
 
 
+## Add Android and NPM paths to the profile to preserve settings on boot
+#SUGGEST TRYING THESE COMMANDS
+#echo "export PATH=\$PATH:$ANDROID_SDK_HOME/tools" >> ".profile"
+#echo "export PATH=\$PATH:$ANDROID_SDK_HOME/platform-tools" >> ".profile"
+
+
+
 echo "-------------Android NDK DONE-------------------------------------------------"
 echo "Note: The Bazel main directory WORKSPACE file needs Android stuff uncommented with these directories added "
 echo "/home/ubuntu/workspace/android-ndk-r10e for the NDK"
