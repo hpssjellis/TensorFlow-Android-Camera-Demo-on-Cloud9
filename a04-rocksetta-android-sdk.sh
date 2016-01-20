@@ -1,0 +1,68 @@
+#!/bin/bash  
+
+#  only need to run this script with the command (do not type the #)
+#  bash a04-rocksetta-android-sdk.sh
+# best in cloud 9 to just right click this file and select run
+
+
+
+
+echo "Now get the Android SDK"
+
+
+
+#tar -xvzf /path/to/yourfile.tgz
+#http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz
+#"android list sdk" will connect to the remote repository and list all the packages available with an index number.
+#"android update sdk --no-ui" accepts a "--filter" argument that can take a package index, or a category name.
+
+
+
+
+#wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /tmp/android-sdk_r24.4.1-linux.tgz
+
+#tar -xvzf /tmp/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
+
+
+
+
+
+
+
+#export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
+#export PATH=${PATH}:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/platform-tools
+
+
+
+#cd /android-sdk-linux/tools/
+#android update sdk --no-ui
+#cd ..
+# note: for size sake had to delete several android platforms 10-20 ???
+
+#echo "-------------Android SDK DONE-------------------------------------------------"
+#echo ". "
+
+#echo "Now lets try the Android NDK"
+
+
+
+#wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home/ubuntu/workspace/android-ndk-r10e-linux-x86_64.bin
+
+#chmod a+x android-ndk-r10e-linux-x86_64.bin
+#./android-ndk-r10e-linux-x86_64.bin
+
+#export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
+
+#export PATH=${PATH}:ANDROID_NDK_HOME
+
+
+
+
+## Add Android and NPM paths to the profile to preserve settings on boot
+#SUGGEST TRYING THESE COMMANDS
+#echo "export PATH=\$PATH:$ANDROID_SDK_HOME/tools" >> ".profile"
+#echo "export PATH=\$PATH:$ANDROID_SDK_HOME/platform-tools" >> ".profile"
+
+
+
+#echo "-------------Android NDK DONE-------------------------------------------------"
