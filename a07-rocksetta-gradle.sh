@@ -9,4 +9,18 @@
 #    curl -L https://services.gradle.org/distributions/gradle-2.5-bin.zip -o gradle-2.5-bin.zip && \
 #    unzip gradle-2.5-bin.zip
 
-
+#!/bin/bash
+# installs to /opt/gradle
+# existing versions are not overwritten/deleted
+# seamless upgrades/downgrades
+# $GRADLE_HOME points to latest *installed* (not released)
+gradle_version=2.9
+mkdir /home/ubuntu/workspace/gradle
+wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
+unzip -oq ./gradle-${gradle_version}-all.zip -d /home/ubuntu/workspace/gradle
+ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/latest
+printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > /etc/profile.d/gradle.sh
+. /etc/profile.d/gradle.sh
+hash -r ; sync
+# check installation
+gradle -v
