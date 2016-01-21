@@ -70,23 +70,40 @@ echo ". "
 
 
 
-
+echo "Now checking where python is installed"
 readlink -f $(which python)
 echo ""
 echo "--------------------------------------------------------------"
-echo ". "
+
+
+
+echo "echo "Now checking where pip is installed"
 readlink -f $(which pip)
 echo ""
 echo "--------------------------------------------------------------"
 echo ". "
+
+
+
+
+echo "echo "Now checking where bazel is installed"
 readlink -f $(which bazel)
 echo ""
 echo "--------------------------------------------------------------"
 echo ". "
+
+
+
+
+echo "echo "Now checking where Gradel is installed"
 readlink -f $(which gradel)
 echo ""
 echo "--------------------------------------------------------------"
 echo ". "
+
+
+
+echo "echo "Now checking where gcc is installed"
 readlink -f $(which gcc)
 echo ""
 
