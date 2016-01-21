@@ -18,13 +18,18 @@ echo "Now get the Android SDK"
 
 
 
+cd /home/ubuntu/workspace/
 
-#wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /tmp/android-sdk_r24.4.1-linux.tgz
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz
 
-#tar -xvzf /tmp/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
+tar -xvzf /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
 
 
 
+#chmod a+x android-sdk_r24.4.1-linux.bin
+#./android-sdk_r24.4.1-linux.bin
+
+#rm android-sdk_r24.4.1-linux.bin
 
 
 
@@ -46,10 +51,15 @@ echo "Now get the Android SDK"
 
 
 
-#wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home/ubuntu/workspace/android-ndk-r10e-linux-x86_64.bin
+wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin -O /home/ubuntu/workspace/android-ndk-r10e-linux-x86_64.bin
 
-#chmod a+x android-ndk-r10e-linux-x86_64.bin
-#./android-ndk-r10e-linux-x86_64.bin
+cd /home/ubuntu/workspace/
+
+chmod a+x android-ndk-r10e-linux-x86_64.bin
+./android-ndk-r10e-linux-x86_64.bin
+
+rm android-ndk-r10e-linux-x86_64.bin
+
 
 #export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
 
@@ -65,4 +75,4 @@ echo "Now get the Android SDK"
 
 
 
-#echo "-------------Android NDK DONE-------------------------------------------------"
+echo "-------------Android SDK  NDK installed not setup-------------------------------------------------"
