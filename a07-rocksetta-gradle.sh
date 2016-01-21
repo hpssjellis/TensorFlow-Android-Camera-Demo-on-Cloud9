@@ -26,4 +26,9 @@ printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$P
 #. /etc/profile.d/gradle.sh
 hash -r ; sync
 # check installation
+
+echo "setup gradle"
+
+gradle
+echo "see if it worked"
 gradle -v
