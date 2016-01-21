@@ -7,7 +7,7 @@
 
 
 echo "Now trying Bazel"
-read -p "Press [Enter] key to start "
+#read -p "Press [Enter] key to start "
 
 
 #https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh
@@ -30,10 +30,19 @@ read -p "Press [Enter] key to start "
 
 
 #https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh
+
+mkdir /home/ubuntu/workspace/bazel
+
 wget https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh -O /home/ubuntu/workspace/bazel
 
-cd bazel
+cd /home/ubuntu/workspace/bazel
+
+chmod a+x bazel-0.1.2-jdk7-installer-linux-x86_64.sh
 bash bazel-0.1.2-jdk7-installer-linux-x86_64.sh
+
+rm bazel-0.1.2-jdk7-installer-linux-x86_64.sh
+
+
 cd ..
 
 
