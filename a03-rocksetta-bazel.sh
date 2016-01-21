@@ -38,7 +38,7 @@ wget https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk
 cd /home/ubuntu/workspace/bazel
 
 chmod a+x bazel-0.1.2-jdk7-installer-linux-x86_64.sh
-bash bazel-0.1.2-jdk7-installer-linux-x86_64.sh
+bash bazel-0.1.2-jdk7-installer-linux-x86_64.sh --bin=/home/ubuntu/workspace/bazel/bin --base=/home/ubuntu/workspace/bazel/.bazel --bazelrc=/home/ubuntu/workspace/bazel/.bazelrc
 
 rm bazel-0.1.2-jdk7-installer-linux-x86_64.sh
 
