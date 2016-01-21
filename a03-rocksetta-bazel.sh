@@ -33,7 +33,7 @@ echo "Now trying Bazel"
 
 mkdir /home/ubuntu/workspace/bazel
 
-wget https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh -O /home/ubuntu/workspace/bazel
+wget https://github.com/bazelbuild/bazel/releases/download/0.1.2/bazel-0.1.2-jdk7-installer-linux-x86_64.sh -O /home/ubuntu/workspace/bazel/bazel-0.1.2-jdk7-installer-linux-x86_64.sh
 
 cd /home/ubuntu/workspace/bazel
 
