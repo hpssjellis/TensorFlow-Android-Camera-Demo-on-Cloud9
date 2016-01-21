@@ -1,5 +1,9 @@
 #!/bin/bash  
 
+
+
+
+echo "Already intalled"
 #  only need to run this script with the command (do not type the #)
 #  bash a02-rocksetta-gcc-java8.sh
 # best in cloud 9 to just right click this file and select run
@@ -8,19 +12,19 @@
 
 
 
-echo "Now trying lots of installs"
-read -p "Press [Enter] key to start backup..."
+#echo "Now trying lots of installs"
+#read -p "Press [Enter] key to start backup..."
 
 
 
 
 
-echo "Install gcc g++ build-essential"
+#echo "Install gcc g++ build-essential"
 
-sudo apt-get install gcc g++ build-essential
+#sudo apt-get install gcc g++ build-essential
 
-echo "--------------------------------------------------------------"
-echo ". "
+#echo "--------------------------------------------------------------"
+#echo ". "
 
 #echo "Installing Java 8"
 
