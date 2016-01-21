@@ -19,7 +19,7 @@ mkdir /home/ubuntu/workspace/gradle
 wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
 unzip -oq ./gradle-${gradle_version}-all.zip -d /home/ubuntu/workspace/gradle
 ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/latest
-printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > .profile
+printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
 
 
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > /etc/profile.d/gradle.sh
