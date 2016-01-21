@@ -1,7 +1,7 @@
 #!/bin/bash  
 
 #  only need to run this script with the command (do not type the #)
-#  bash a05-rocksetta-paths.sh
+#  bash a08-rocksetta-paths.sh
 # best in cloud 9 to just right click this file and select run
 
 
