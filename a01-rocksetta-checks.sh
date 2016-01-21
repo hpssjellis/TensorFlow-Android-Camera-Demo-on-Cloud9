@@ -60,6 +60,29 @@ echo "--------------------------------------------------------------"
 echo ". "
 
 
+echo "Now checking where android sdk is installed"
+
+readlink -f $(which android)
+
+
+echo "--------------------------------------------------------------"
+echo ". "
+
+
+
+
+readlink -f $(which python)
+echo ""
+
+readlink -f $(which pip)
+echo ""
+readlink -f $(which bazel)
+echo ""
+readlink -f $(which gradel)
+echo ""
+
+echo "--------------------------------------------------------------"
+echo ". "
 
 
 
