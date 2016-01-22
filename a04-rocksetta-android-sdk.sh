@@ -32,7 +32,7 @@ tar -xvzf /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/w
 #rm android-sdk_r24.4.1-linux.bin
 
 
-printf "\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=$PATH:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
+printf "\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=$PATH:$ANDROID_SDK_HOME/tools;$ANDROID_SDK_HOME/platform-tools;"  >> ~/.profile
 
 
 
@@ -68,7 +68,7 @@ rm android-ndk-r10e-linux-x86_64.bin
 #export PATH=${PATH}:ANDROID_NDK_HOME
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
 
-printf "\nexport ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e\nexport PATH=$PATH:$ANDROID_NDK_HOME"  >> ~/.profile
+printf "\nexport ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e\nexport PATH=$PATH:$ANDROID_NDK_HOME;"  >> ~/.profile
 
 
 
