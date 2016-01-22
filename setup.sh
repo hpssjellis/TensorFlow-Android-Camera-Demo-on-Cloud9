@@ -8,19 +8,19 @@
 
 
 
-a02-rocksetta-gcc-java8.sh
+bash a02-rocksetta-gcc-java8.sh
 
-a03-rocksetta-bazel.sh
+bash a03-rocksetta-bazel.sh
 
-a04-rocksetta-android-sdk.sh
-
-
-a06-rocksetta-setup-android.sh
+bash a04-rocksetta-android-sdk.sh
 
 
-a07-rocksetta-gradle.sh
+bash a06-rocksetta-setup-android.sh
 
 
-a08-rocksetta-paths.sh
+bash a07-rocksetta-gradle.sh
 
-a01-rocksetta-checks.sh
+
+bash a08-rocksetta-paths.sh
+
+bash a01-rocksetta-checks.sh
