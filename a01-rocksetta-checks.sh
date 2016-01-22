@@ -147,5 +147,7 @@ echo "--------------------------------------------------------------"
 echo "Some other useful commands are cd     cd ..      dir    ls     pwd     "
 echo "."
 
-nano ~/.profile    #Re-read your profile disable this later
+echo " To check paths for new terminals, I suggested to run:"
+echo "nano ~/.profile"
+
 
