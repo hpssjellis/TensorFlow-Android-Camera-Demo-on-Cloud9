@@ -9,7 +9,7 @@
 echo "Now get TensorFlow"
 
 
-git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow /home/ubuntu/workspace/tensorflow/tensorflow
 
 
 echo "Now download the image sets"
@@ -20,5 +20,24 @@ wget https://storage.googleapis.com/download.tensorflow.org/models/inception5h.z
 unzip /tmp/inception5h.zip -d /home/ubuntu/workspace/tensorflow/tensorflow/examples/android/assets/
 
 
-echo "-------------DONE-------------------------------------------------"
+rm /tmp/inception5h.zip
+
+
+
+echo "exporting the Path to my .profile file so other terminals have the path"
+
+printf "\n\Nexport TENSORFLOW_HOME=/home/ubuntu/workspace/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.profile
+
+
+echo "exporting the path so that the next command works"
+
+
+export TENSORFLOW_HOME=/home/ubuntu/workspace/tensorflow/tensorflow
+export PATH=$PATH:$TENSORFLOW_HOME/bin
+
+
+
+
+
+echo "-------------DONE TENSORFLOW-------------------------------------------------"
 echo ". "
