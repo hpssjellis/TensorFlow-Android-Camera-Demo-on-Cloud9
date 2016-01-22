@@ -24,7 +24,7 @@ wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/ubuntu/
 
 tar -xvzf /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
 
-
+rm android-sdk_r24.4.1-linux.tgz
 
 #chmod a+x android-sdk_r24.4.1-linux.bin
 #./android-sdk_r24.4.1-linux.bin
