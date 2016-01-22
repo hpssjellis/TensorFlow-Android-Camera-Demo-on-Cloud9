@@ -20,9 +20,16 @@ wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.z
 unzip -oq ./gradle-${gradle_version}-all.zip -d /home/ubuntu/workspace/gradle
 ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/latest
 
-
+echo "exporting the Path to my .profile file so other terminals have the path"
 
 printf "\nexport GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
+
+
+echo "exporting the path so that the next command works"
+
+
+export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest
+export PATH=$PATH:$GRADLE_HOME/bin
 
 
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > /etc/profile.d/gradle.sh
