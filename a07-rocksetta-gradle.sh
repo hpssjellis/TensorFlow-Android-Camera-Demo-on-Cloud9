@@ -22,7 +22,7 @@ ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/latest
 
 
 
-printf "\nexport GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=$PATH:/home/ubuntu/workspace/gradle/latest/bin"  >> ~/.profile
+printf "\nexport GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=$PATH:$GRADLE_HOME/bin"  >> ~/.profile
 
 
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > /etc/profile.d/gradle.sh
