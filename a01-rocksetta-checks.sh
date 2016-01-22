@@ -19,12 +19,28 @@ echo "--------------------------------------------------------------"
 echo ". "
 
 
+echo "Now checking where python is installed"
+readlink -f $(which python)
+echo ""
+echo "--------------------------------------------------------------"
+
+
 echo "Now checking if pip is installed"
 
 pip list
 
 echo "--------------------------------------------------------------"
 echo ". "
+
+
+
+echo "echo "Now checking where pip is installed"
+readlink -f $(which pip)
+echo ""
+echo "--------------------------------------------------------------"
+echo ". "
+
+
 
 
 echo "Now checking if java is installed"
@@ -70,16 +86,14 @@ echo ". "
 
 
 
-echo "Now checking where python is installed"
-readlink -f $(which python)
+
+
+
+echo "Now checking if Bazel is installed"
+
+bazel -h
 echo ""
-echo "--------------------------------------------------------------"
 
-
-
-echo "echo "Now checking where pip is installed"
-readlink -f $(which pip)
-echo ""
 echo "--------------------------------------------------------------"
 echo ". "
 
@@ -95,8 +109,20 @@ echo ". "
 
 
 
-echo "echo "Now checking where Gradel is installed"
-readlink -f $(which gradel)
+echo "Now checking if Gradle is installed"
+
+grdle -v
+echo ""
+
+echo "--------------------------------------------------------------"
+echo ". "
+
+
+
+
+
+echo "echo "Now checking where Gradle is installed"
+readlink -f $(which gradle)
 echo ""
 echo "--------------------------------------------------------------"
 echo ". "
@@ -121,5 +147,5 @@ echo "--------------------------------------------------------------"
 echo "Some other useful commands are cd     cd ..      dir    ls     pwd     "
 echo "."
 
-nano ~/.profile    #Re-read your profile
+nano ~/.profile    #Re-read your profile disable this later
 
