@@ -121,3 +121,5 @@ echo "--------------------------------------------------------------"
 echo "Some other useful commands are cd     cd ..      dir    ls     pwd     "
 echo "."
 
+nano ~/.profile    #Re-read your profile
+
