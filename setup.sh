@@ -23,4 +23,6 @@ bash a07-rocksetta-gradle.sh
 
 bash a08-rocksetta-paths.sh
 
+bash a09-rocksetta-tensorflow.sh
+
 bash a01-rocksetta-checks.sh
