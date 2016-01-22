@@ -2,6 +2,17 @@
 TensorFlow Android Camera Demo loaded onto Cloud9 for ease of use
 
 
+Jan 21, 2016. Closer to working
+
+just run 
+bash setup.sh
+in a terminal
+
+or
+
+right click setup.sh and select "run"
+
+
 Jan 20, 2016
 
 Not Yet working.
