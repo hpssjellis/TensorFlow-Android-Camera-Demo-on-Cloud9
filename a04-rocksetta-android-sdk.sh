@@ -31,8 +31,15 @@ rm android-sdk_r24.4.1-linux.tgz
 
 #rm android-sdk_r24.4.1-linux.bin
 
+echo "export paths to the .profile file so other terminals can use android sdk"
 
-printf "\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools;\$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
+printf "\n\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools;\$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
+
+echo "export paths here so this bash file can use android sdk"
+export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
+export PATH=$PATH:$ANDROID_SDK_HOME/tools;$ANDROID_SDK_HOME/platform-tools
+
+
 
 
 
@@ -68,7 +75,18 @@ rm android-ndk-r10e-linux-x86_64.bin
 #export PATH=${PATH}:ANDROID_NDK_HOME
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin"  >> ~/.profile
 
-printf "\nexport ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e\nexport PATH=\$PATH:\$ANDROID_NDK_HOME;"  >> ~/.profile
+echo "export paths to the .profile file so other terminals can use android NDK"
+
+printf "\nexport ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e\nexport PATH=\$PATH:\$ANDROID_NDK_HOME"  >> ~/.profile
+
+
+
+echo "export paths here so this file can use android NDK"
+export ANDROID_NDK_HOME=/home/ubuntu/workspace/android-ndk-r10e
+export PATH=$PATH:$ANDROID_NDK_HOME
+
+
+
 
 
 
