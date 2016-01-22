@@ -111,7 +111,7 @@ echo ". "
 
 echo "Now checking if Gradle is installed"
 
-grdle -v
+gradle -v
 echo ""
 
 echo "--------------------------------------------------------------"
