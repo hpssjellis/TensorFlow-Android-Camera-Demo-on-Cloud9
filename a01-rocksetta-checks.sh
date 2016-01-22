@@ -45,9 +45,9 @@ echo ". "
 
 echo "Now checking if java is installed"
 
-java -version
+java -h
 echo ""
-javac -version
+javac
 
 echo "--------------------------------------------------------------"
 echo ". "
