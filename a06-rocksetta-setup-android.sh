@@ -8,11 +8,12 @@ android update sdk --filter tools --no-ui --force
 android update sdk --filter platform-tools --no-ui --force 
 
 android update sdk --filter extra --no-ui --force
-android update sdk --filter android-20 --no-ui --force
+
 android update sdk --filter extra --no-ui --force
-android update sdk --all --filter build-tools --no-ui --force
-
-
+android update sdk --all --filter build-tools-23.0.2 --no-ui --force
+android update sdk --filter android-20 --no-ui --force   #Android 4.4W.2
+android update sdk --filter android-22 --no-ui --force   #Android 5.1.1
+android update sdk --filter android-23 --no-ui --force   #Android 6.0
 #--accept-license
 
 #expect -c '
