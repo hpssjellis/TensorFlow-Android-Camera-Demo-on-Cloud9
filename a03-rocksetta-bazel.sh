@@ -42,8 +42,26 @@ bash bazel-0.1.2-jdk7-installer-linux-x86_64.sh --bin=/home/ubuntu/workspace/baz
 
 rm bazel-0.1.2-jdk7-installer-linux-x86_64.sh
 
+cd /home/ubuntu/workspace/bazel/.bazel/bin
+chmod a+x bazel
 
-cd ..
+
+
+echo "exporting the Path to my .profile file so other terminals have the path"
+
+printf "\n\nexport BAZEL_HOME=/home/ubuntu/workspace/bazel/.bazel\nexport PATH=\$PATH:\$BAZEL_HOME/bin"  >> ~/.profile
+
+
+echo "exporting the path so that the next command works"
+
+
+export BAZEL_HOME=/home/ubuntu/workspace/bazel/.bazel
+export PATH=$PATH:$BAZEL_HOME/bin
+
+
+
+
+cd /home/ubuntu/workspace
 
 
 echo "----------------Bazel Done----------------------------------------------"
