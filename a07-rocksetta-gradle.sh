@@ -43,7 +43,7 @@ gradle
 echo "see if it worked"
 gradle -v
 
-
+rm gradle-2.9-all.zip
 
 #echo "export PATH=$GRADLE_HOME/bin:$PATH" > ~/.profile
 #source ~/.profile    #Re-read your profile
