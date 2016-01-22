@@ -13,6 +13,17 @@ android update sdk --filter extra --no-ui --force
 android update sdk --all --filter build-tools --no-ui --force
 
 
+#--accept-license
+
+#expect -c '
+#set timeout -1   ;
+#spawn sudo /opt/android-sdk/tools/android update sdk -u; 
+#expect { 
+#    "Do you accept the license" { exp_send "y\r" ; exp_continue }
+#    eof
+#}
+#'
+
 
 
 #"android list sdk" will connect to the remote repository and list all the packages available with an index number.
