@@ -26,7 +26,7 @@ rm /tmp/inception5h.zip
 
 echo "exporting the Path to my .profile file so other terminals have the path"
 
-printf "\n\Nexport TENSORFLOW_HOME=/home/ubuntu/workspace/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.profile
+printf "\n\nexport TENSORFLOW_HOME=/home/ubuntu/workspace/tensorflow/tensorflow\nexport PATH=\$PATH:\$TENSORFLOW_HOME/bin"  >> ~/.profile
 
 
 echo "exporting the path so that the next command works"
