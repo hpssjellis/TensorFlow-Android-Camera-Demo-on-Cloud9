@@ -4,6 +4,15 @@
 #  bash a06-rocksetta-setup-android.sh
 # best in cloud 9 to just right click this file and select run
 
+android update sdk --filter tools --no-ui --force
+android update sdk --filter platform-tools --no-ui --force 
+
+android update sdk --filter extra --no-ui --force
+android update sdk --filter android-20 --no-ui --force
+android update sdk --filter extra --no-ui --force
+android update sdk --all --filter build-tools --no-ui --force
+
+
 
 
 #"android list sdk" will connect to the remote repository and list all the packages available with an index number.
