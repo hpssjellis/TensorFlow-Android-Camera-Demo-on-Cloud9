@@ -1,5 +1,8 @@
 stuff to try
 
+https://blog.nraboy.com/2015/04/using-gradle-in-your-command-line-android-project/
+
+https://blog.nraboy.com/2014/09/create-android-app-start-finish/
 
 android create project --activity [activityname] --package [packagename] --target [androidtarget] --path [projectpath] --gradle --gradle-version [gradleversion]
 
