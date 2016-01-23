@@ -33,11 +33,12 @@ rm android-sdk_r24.4.1-linux.tgz
 
 echo "export paths to the .profile file so other terminals can use android sdk"
 
-printf "\n\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools;\$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
+printf "\n\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
 
 echo "export paths here so this bash file can use android sdk"
 export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
-export PATH=$PATH:$ANDROID_SDK_HOME/tools;$ANDROID_SDK_HOME/platform-tools
+export PATH=$PATH:$ANDROID_SDK_HOME/tools
+export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
 
 
