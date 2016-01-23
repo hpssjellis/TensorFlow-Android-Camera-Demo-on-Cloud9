@@ -9,7 +9,7 @@ echo "Already intalled"
 # best in cloud 9 to just right click this file and select run
 
 
-
+ sudo apt-get install lib32z1
 
 
 #echo "Now trying lots of installs"
